@@ -5,12 +5,15 @@
 }
 
 body {
+    background-image: url("https://defence.pk/pdf/media/paf-paintings.13658/full");
     width: 100%;
     height: 100vh;
     background-color: rgb(242, 243, 248);
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: 5s bg infinite;
+    background-size: cover;
 }
 
 .main {
@@ -129,17 +132,17 @@ body {
 .sign-in-form button {
 
     width: 100px;
-    height: 40px;
-    border-radius: 20px;
-    box-shadow: 4px 4px 10px rgba(163, 177, 198, 0.6),
-    3px 3px 3px white;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(73, 157, 245);
+    color: white;
     border: none;
     outline: none;
     cursor: pointer;
     transition: 0.3s ease;
 }
 .sign-in-form button:hover {
-    transform: scale(1.1);
+    background-color: rgb(34, 133, 238);
 }
 
 
@@ -183,11 +186,99 @@ body {
     cursor: pointer;
 }
 .next-btn:hover {
-    background-color: rgb(50, 143, 243);
+    background-color: rgb(34, 133, 238);
 }
 
 
 .dob {
     transform: translateX(100%);
     transition: 0.6s ease;
+    height: 100%;
+}
+
+[type = radio] {
+    box-shadow: 0px 0px 0px transparent !important;
+    border: 1px solid black !important;
+    height:  15px !important;
+    width: 15px !important;
+    padding-left: 0px !important;
+}
+
+[type = date] {
+    box-shadow: 0px 0px 0px transparent !important;
+    border: 1px solid grey !important;
+    border-radius: 10px !important;
+}
+
+.dob form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.dob h6 {
+    color: grey;
+}
+
+.user-details {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sign-up-div {
+    flex: 1;
+}
+
+
+
+.gender {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.gender div {
+    border: 1px solid grey;
+}
+
+.gender-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+@keyframes bg{
+    1% {
+        background-image: url("https://defence.pk/pdf/media/paf-paintings.13658/full");
+    }
+    50% {
+        background-image: url("https://defence.pk/pdf/media/paf-paintings.13659/full");
+    }
+    100% {
+        background-image: url("https://defence.pk/pdf/media/paf-paintings.13661/full?d=1460622968");
+    }
+}
+
+
+@keyframes title{
+    0% {
+        color: blue;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: green;
+    }
 }
