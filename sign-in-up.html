@@ -11,23 +11,28 @@
 
 <body>
     <div class="main">
-        <h1>2 <sup>nd</sup> LOD</h1>
+        <h1>2<sup>nd</sup> LOD</h1>
         <div class="buttons">
-            <button>Sign-In</button>
-            <button>Sign-Up</button>
+            <div>
+                <div class="page-slider"></div>
+                <button class="sign-in-btn">Sign In</button>
+                <button class="sign-up-btn">Sign Up</button>
+            </div>
         </div>
         <div class="sign-in-up">
 
             <div class="sign-in">
 
                 <form class="sign-in-form" action="">
-                    <div>
+                    <div class="input-div">
                         <input placeholder="Email address or phone number" type="text">
                         <input placeholder="Password" type="text">
                     </div>
-                    <button>
-                        Sign-In
-                    </button>
+                    <div class="sign-in-div">
+                        <button>
+                            Sign In
+                        </button>
+                    </div>
                 </form>
 
                 <span>
@@ -36,7 +41,7 @@
                 </span>
             </div>
             <div class="sign-up">
-                <div>
+                <div class="user-name">
                     <form class="sign-up-form" action="">
                         <div>
                             <input placeholder="First Name" type="text">
@@ -44,8 +49,18 @@
                             <input placeholder="Email" type="text">
                             <input placeholder="Password" type="text">
                         </div>
+                        <button type="button" class="next-btn">
+                            Next
+                        </button>
+                    </form>
+                </div>
+                <div class="dob">
+                    <form action="">
+                        <div>
+                            <input type="date">
+                        </div>
                         <button>
-                            Sign-Up
+                            Sign Up
                         </button>
                     </form>
                 </div>
@@ -54,5 +69,6 @@
     </div>
 </body>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="./JS/sign-in-up.js"></script>
 
 </html>
