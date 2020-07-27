@@ -31,14 +31,19 @@ body {
     font-weight: 800;
 }
 .main-name span {
-    transform: translateX(-20%);
+    transform: translateX(-10%);
+}
+
+.main {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(202, 209, 248);
 }
 
 .vertical{
-    /* background-color: #412234; */
-    /* background-image: linear-gradient(to right, #011947, #023ead); */
-    /* background-image: linear-gradient(to top right, #001350, #0013509a); */
-    /* background-color: rgb(74, 74, 153);  */
     background-color: rgb(52, 52, 129);
     width: 5%;
     height: 93vh;
@@ -47,7 +52,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* box-shadow: 4px 0px 20px rgba(41, 94, 255, 0.664); */
 }
 .top {
     display: flex;
@@ -98,7 +102,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
-.bottom > div > i {
+.bottom > div > a > i {
     font-size: 30px;
 }
 .bottom span {
@@ -108,4 +112,24 @@ body {
     color: white;
     transform: scale(1.2);
     text-shadow: 0px 2px 10px white;
+}
+
+
+/* designing posts section */
+
+.posts {
+    width: 70%;
+    height: 93vh;
+    border: 1px solid rgb(52, 52, 129);
+    border-left: 10px solid rgb(52, 52, 129);
+    display: inline-block;
+}
+
+
+
+
+.chat {
+    width: 25%;
+    height: 93vh;
+    border: 1px solid rgb(52, 52, 129);
 }
